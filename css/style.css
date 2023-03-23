@@ -649,7 +649,9 @@ body {
 	background-color: #f2f3f5;
 	border-radius: 40px;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
+	text-align: center;
 }
 
 .services__decor {
@@ -657,8 +659,8 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
-	width: 90px;
-	height: 90px;
+	min-width: 150px;
+	min-height: 150px;
 	position: relative;
 }
 
@@ -667,9 +669,9 @@ body {
 	left: -13px;
 	position: absolute;
 	content: '';
-	width: 115px;
-	height: 115px;
-	background: rgba(173, 23, 25, 0.6);
+	min-width: 175px;
+	min-height: 175px;
+	background: rgba(173, 23, 25, 0.3);
 	filter: blur(70px);
 	border-radius: 50%;
 }
@@ -1207,6 +1209,11 @@ body {
 	.services__items {
 		grid-template-columns: 1fr;
 	}
+	.services__item{
+		flex-direction: row;
+		justify-content: center;
+		gap: 20px;
+	}
 
 	/* * contacts */
 
@@ -1301,13 +1308,13 @@ body {
 	/* * services */
 
 	.services__decor {
-		width: 40px;
-		height: 40px;
+		min-width: 100px;
+		min-height: 100px;
 	}
 
 	.services__decor::before {
-		width: 70px;
-		height: 70px;
+		min-width: 115px;
+		min-height: 115px;
 	}
 
 	/* * contacts */
