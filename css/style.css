@@ -355,7 +355,7 @@ body {
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	min-height: 700px;
+	min-height: 90vh;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center top;
